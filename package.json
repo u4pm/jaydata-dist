@@ -7,7 +7,7 @@
     "dot": "^1.0.3",
     "jaydata-dynamic-metadata": "git+https://github.com/u4pm/jaydata-dynamic-metadata.git#3591311f023ea7f11d31c27c124b600118ebd8c3",
     "jaydata-error-handler": "^0.0.1",
-    "jaydata-odatajs": "git+https://github.com/u4pm/olingo-odata4-js.git#63cf4f7cd3c7100ea887d1e96f31b233919c6300",
+    "jaydata-odatajs": "git+https://github.com/u4pm/olingo-odata4-js.git#91dfd5373d8d085a30601aaf872a98838d6359cc",
     "jaydata-promise-handler": "^0.1.0",
     "odata-v4-metadata": "^0.1.3",
     "xmldom": "^0.1.19"
