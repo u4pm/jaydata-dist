@@ -1,3 +1,47 @@
+## U4PM process:
+
+### SETUP of development branch: 
+- git clone https://github.com/u4pm/jaydata.git
+- git checkout development
+
+### WORK:
+- add changes to code
+- git commit - add comments!
+- git push
+
+If you need permissions for repository ask JW or SB.
+
+### BUILD:
+
+- npm install --save-dev gulp   - install gulp ref https://gulpjs.com/docs/en/getting-started/quick-start 
+- gulp --version  to check
+
+- gulp to run all
+- gulp clean - clean dist folder
+- gulp nodejs - to build lib
+
+### UPLOAD to dist repo
+- git clone https://github.com/u4pm/jaydata-dist.git 
+- copy paste generated with gulp lib folder to dist project cloned above
+- check changes it converts all line endings to CRLF from LF and mark all files as modified
+- git add -A - seems to resolve issue
+
+Other settings/commands that were used:
+git config --global core.autocrlf input
+git config core.filemode false
+git format-patch HEAD
+
+Test changes in local environment:
+- modify package json to include your local version of jaydata ex.     "jaydata": "file:c:/Projects/jaydata-dist",
+- to build/run it you may need to install url module and acorn in jaydata-dist or it may require special node version
+
+- git commit add comments!
+- git push
+
+### UPDATE package.jsons
+- get commit hash
+- update package.json of project in which you need this dependency
+
 ## Notice: this library isn't maintained anymore
 
 JayData is a unified data access library for JavaScript to CRUD data from different sources like WebSQL/SQLite,
@@ -33,7 +77,7 @@ http://jaystack.com/licensing
 ## Installation
 
 ```bash
-$ npm install jaydata
+$ npm install jaydata 
 ```
 
 ## How to build
